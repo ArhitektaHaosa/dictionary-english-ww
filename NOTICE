@@ -1,0 +1,68 @@
+Dictionary WW
+===============
+
+The PHP, CSS, and JavaScript in this repository are under the MIT License
+(see LICENSE). The dictionary DATA is not MIT. Each source keeps its own
+licence. Do not strip the attribution in the site footer.
+
+Wiktionary via Kaikki.org
+  English JSONL: https://kaikki.org/dictionary/English/kaikki.org-dictionary-English.jsonl.gz
+  Licence: Creative Commons Attribution-ShareAlike 4.0 International
+  https://creativecommons.org/licenses/by-sa/4.0/
+  The underlying text is from Wiktionary (https://en.wiktionary.org/), also CC BY-SA 4.0.
+  Extracted with wiktextract. Cite Tatu Ylonen, "Wiktextract: Wiktionary as
+  Machine-Readable Structured Data", LREC 2022, if you use it in research.
+  Share-alike applies to the definition text. Audio files linked from
+  Wikimedia Commons stay under the licence named on each Commons file page.
+
+Open English WordNet 2025
+  https://en-word.net/downloads/english-wordnet-2025.zip
+  Licence: Creative Commons Attribution 4.0 International
+  https://creativecommons.org/licenses/by/4.0/
+  Derived from Princeton WordNet by the Open English WordNet community.
+  https://github.com/globalwordnet/english-wordnet
+
+Moby Thesaurus II
+  https://www.gutenberg.org/ebooks/3202
+  File: https://www.gutenberg.org/files/3202/files/mthesaur.txt
+  Public domain, granted by Grady Ward, January 2001.
+  Project Gutenberg terms still apply to the way you redistribute their copy:
+  https://www.gutenberg.org/policy/license.html
+
+Tatoeba
+  English sentences: https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences.tsv.bz2
+  Licence: Creative Commons Attribution 2.0 France (CC BY 2.0 FR)
+  https://creativecommons.org/licenses/by/2.0/fr/
+  https://tatoeba.org/en/terms_of_use
+  Sentences stored by this app keep the Tatoeba sentence id. The page links
+  to https://tatoeba.org/en/sentences/show/ID
+
+CMU Pronouncing Dictionary
+  https://github.com/cmusphinx/cmudict
+  BSD-style licence (see the COPYING / LICENSE file in that repository).
+  Used only as a fallback when Wiktionary has no IPA. Converted from ARPABET
+  to a broad IPA transcription by tools/import.php. The conversion is ours;
+  the phonetic labels are from CMUdict.
+
+Frequency list
+  https://github.com/hermitdave/FrequencyWords
+  content/2018/en/en_50k.txt
+  Content licence: Creative Commons Attribution-ShareAlike 4.0 International
+  https://creativecommons.org/licenses/by-sa/4.0/
+  Built from the OpenSubtitles 2018 corpus. Used for the common-word flag and
+  the five frequency bars. Rank 1 is the most frequent word in that list.
+  Bars: 1-1000 = 5, 1001-3000 = 4, 3001-8000 = 3, 8001-20000 = 2,
+  20001-50000 = 1. Words in the top 20,000 are marked common.
+
+Fonts
+  Literata (OFL 1.1) and Source Sans 3 (OFL 1.1), shipped as WOFF2 for the
+  pages. https://github.com/googlefonts/literata
+  https://github.com/adobe-fonts/source-sans
+
+Merge order used by tools/import.php
+  Wiktionary (Kaikki) first, then Open English WordNet, then Moby Thesaurus.
+  WordNet does not replace a Wiktionary sense. It adds a part of speech only
+  when Wiktionary has none for that part of speech, and it adds synonym,
+  antonym, hypernym, and related links. Moby adds extra synonyms only.
+  Tatoeba fills an example only when a sense has none. CMUdict fills IPA only
+  when an entry has none. Every stored row keeps its source name.

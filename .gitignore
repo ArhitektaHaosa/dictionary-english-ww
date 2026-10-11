@@ -1,0 +1,12 @@
+/config.php
+/data/sources/*
+!/data/sources/.gitkeep
+/data/*.sqlite
+/data/*.sqlite-journal
+/data/*.sqlite-wal
+/data/*.sqlite-shm
+/data/*.jsonl
+/data/ratelimit/
+/public/sitemap*.xml
+*.log
+.DS_Store

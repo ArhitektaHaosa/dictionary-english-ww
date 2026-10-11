@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# php tools/build_sitemap.php replaces this file with an absolute Sitemap URL.
